@@ -1,0 +1,77 @@
+
+.blue-square-container {
+    text-align: center;
+  }
+  
+  .blue-square {
+    background-color: #0074D9;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .para {
+   text-align: center;
+   font-size: 50px;
+   font-family: fantasy;
+   color:rgba(6, 98, 218, 0.836);
+   background-color: palegoldenrod;
+  }
+
+  .para2 {
+    
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+    color:rgb(7, 104, 231);
+   }
+  .button {
+
+    font-size: 20px;
+    color: white;
+    background: rgb(231, 134, 7);
+    border: 2px solid rgb(37, 34, 34);
+    border-radius: 10px;
+    border-width: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+ }
+
+.box1 {
+    font-size: 54px;
+    width:100px;
+    height:100px;
+    display: inline-block;
+    border-width: 15px;
+    border-style:outset;
+    border-color:rgb(29, 168, 223);
+    background: rgb(221, 200, 9);
+    font-stretch: extra-expanded;
+  }
+
+
+.box2 {
+    font-size: 54px;
+    width:100px;
+    height:100px;
+    display: inline-block;
+    border-width: 15px;
+    border-style:outset;
+    border-color:rgb(29, 168, 223);
+    background: rgb(221, 200, 9);
+    
+  }
+.container {
+    text-align: center;  
+}
+
+.container1{
+    font-size: 54px;
+width: 200px;
+height: 200px;
+background-image: linear-gradient(rgba(13, 178, 228, 0.884),rgba(55, 196, 214, 0.884));
+margin: 20px 
+}

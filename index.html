@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="mathinterface.css">
+<title>Math Interface </title>
+</head>
+<body>
+
+
+<div class="para">Math Interface</div>
+<div class="para2">Welcome kid</div> 
+
+<script language="javascript">
+
+var correct_total; // correct total of the current addition problem
+var correct_answers=0; // number of correct answers
+function fillNumbers(){
+  var val1 = Math.floor((Math.random() * 10) + 1);;
+  var val2 = Math.floor((Math.random() * 10) + 1);;
+  correct_total = val1+val2;
+  document.getElementById("num1").innerHTML=val1;
+  document.getElementById("num2").innerHTML=val2;           
+}
+
+function checkAnswer() {
+
+  var user_answer = document.getElementById("user_answer").value;
+  if(user_answer==correct_total){
+    correct_answers++
+    document.getElementById("current_result").innerHTML = "You are correct!";
+    
+  }else{
+    document.getElementById("current_result").innerHTML = "Sorry, the correct total is "+correct_total;
+  }
+  document.getElementById("correct_answers").innerHTML = correct_answers;
+  // clear Input answer value by user before filling/generate numbers.
+  document.getElementById("user_answer").value="";
+  alert("you have got "+document.getElementById("correct_answers").innerHTML+" correct answers");
+  // now - fill with new numbers
+  fillNumbers();
+}
+    
+</script>
+
+</head>
+<body onload="fillNumbers()">
+      <div class="container">
+      <div class="box1" id="num1"></div> 
+       <h1>+</h1> 
+      <div class="box2" id="num2"></div><br>
+      <h1>=</h1> 
+      <input id="user_answer" class="box2">
+      </div>
+      <br>
+      <div class="container">
+       <h2>Enter your answer</h2>
+      <input type="button" class="button" name="one" value="1" onclick="user_answer.value += '1'">
+      <input type="button" class="button"name="two" value="2" onclick="user_answer.value += '2'">
+      <input type="button" class="button" name="three" value="3" onclick="user_answer.value += '3'">
+      <input type="button" class="button" name="four" value="4" onclick="user_answer.value += '4'">
+      <input type="button" class="button" name="five" value="5" onclick="user_answer.value += '5'">
+      <br>
+      <input type="button" class="button" name="six" value="6" onclick="user_answer.value += '6'">
+      <input type="button" class="button" name="seven" value="7" onclick="user_answer.value += '7'">
+      <input type="button" class="button" name="eight" value="8" onclick="user_answer.value += '8'">
+      <input type="button" class="button" name="nine" value="9" onclick="user_answer.value += '9'">
+      <input type="button" class="button" name="zero" value="0" onclick="user_answer.value += '0'">
+       
+      <br>
+      <input type="button" class="button" name="Checkanswer" value="Check answer" onclick="checkAnswer()"><br>
+      Result: <div id="current_result"></div>
+      Correct answers:<div id="correct_answers"></div>
+   
+    </div>
+
+</body>
+</html>
